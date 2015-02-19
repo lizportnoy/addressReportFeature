@@ -1,0 +1,88 @@
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  color: #0B486B;
+  text-align: center;
+  background-color: #FFFFEB;
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.7em;
+  margin: .4em 0;
+  padding: 0;
+}
+
+div#map {
+  height: 70%;
+  width: 80%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 1em auto;
+  border: solid .1em gray;
+  border-radius: .2em;
+}
+
+/* Form Elements */
+form {
+  margin: .5em auto;
+  width: 80%;
+}
+input.address {
+  width: 70%;
+  text-indent: 1em;
+  font-size: 1.1em;
+  border-radius: 1em;
+  border: .2em solid #A8E5D0;
+  height: 2em;
+  margin-right: 2em;
+  display: inline-block;
+}
+
+input.address:focus {
+  outline: none;
+}
+
+input.submitButton:hover, input.submitButton:focus {
+  background:#0B486B;
+  color: #FFFFEB;
+  cursor: pointer;
+  outline: none;
+}
+
+input.submitButton {
+  height: 200em;
+  width: 20%;
+  vertical-align: middle;
+  border: 2px solid #333;
+  background:#A8E5D0;
+  border-radius: .5em;
+  color:#0B486B;
+  font-size: 1em; 
+  font-weight: bold;
+  padding: 0 1.5em;
+  height: 40px;
+}
+
+/* Event Popup Styling */
+.leaflet-popup-content-wrapper {
+  text-align: center;
+  border-radius: .5em;
+  border: .3em solid #52CCA3;
+  padding: .2em;
+}
+.leaflet-popup-content {
+  width: 18em !important;
+}
+
+.leaflet-popup-content-wrapper span {
+  display: block;
+  font-size: 1.1em;
+  color: #0B486B;
+}
+
+span.venue {
+  font-style: italic;
+}
